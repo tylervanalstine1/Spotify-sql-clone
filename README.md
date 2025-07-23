@@ -21,3 +21,4 @@ A SQL-based simulation of Spotify’s data model and user behavior analytics.
 - Queries for top songs, users, and genres
 
 ## 💡 Built by Tyler VanAlstine
+https://tylervanalstine1.github.io/Spotify-sql-clone/
