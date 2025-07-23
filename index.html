@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify SQL Clone</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; max-width: 800px; margin: auto; }
+    h1 { color: #1DB954; }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    a { color: #1DB954; }
+  </style>
+</head>
+<body>
+  <h1>🎵 Spotify SQL Clone</h1>
+  <p>This project simulates the core structure of Spotify using SQL. It includes:</p>
+  <ul>
+    <li><code>schema.sql</code> – Defines tables like users, songs, playlists</li>
+    <li><code>insert_mock_data.sql</code> – Adds sample users, artists, songs</li>
+    <li><code>queries.sql</code> – Sample queries like top songs, active users</li>
+  </ul>
+
+  <h2>📂 Files</h2>
+  <ul>
+    <li><a href="schema.sql" download>Download schema.sql</a></li>
+    <li><a href="insert_mock_data.sql" download>Download insert_mock_data.sql</a></li>
+    <li><a href="queries.sql" download>Download queries.sql</a></li>
+  </ul>
+
+  <h2>🧠 Sample Query Output</h2>
+  <pre><code>SELECT title, COUNT(*) as play_count
+FROM listening_history
+JOIN songs ON songs.song_id = listening_history.song_id
+GROUP BY title
+ORDER BY play_count DESC
+LIMIT 5;</code></pre>
+
+  <p>View the full project on <a href="https://github.com/your-username/spotify-sql-clone">GitHub</a>.</p>
+</body>
+</html>
